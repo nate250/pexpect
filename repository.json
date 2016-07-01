@@ -1,0 +1,38 @@
+{
+  // BE SURE TO REMOVE THESE COMMENTS BEFORE USING THIS TEMPLATE SINCE
+  // COMMENTS ARE NOT ALLOWED IN JSON
+
+  "schema_version": "3.0.0",
+
+  // Packages can be specified with a simple URL to a GitHub or BitBucket
+  // repository, but details can be overridden for every field. It is also
+  // possible not utilize GitHub or BitBucket at all, but just to host your
+  // packages on any server with an SSL certificate.
+  "packages": [
+
+    // This is what most packages should aim to model.
+    //
+    // The majority of the information about a package ("name",
+    // "description", "author") are all pulled from the GitHub (or
+    // BitBucket) repository info.
+    //
+    // If the word "sublime" exists in the repository name, the name can
+    // be overridden by the "name" key.
+    //
+    // All packages must have one or more "releases". Releases are generated
+    // from the the tags that are semantic versioning version numbers.
+    //
+    // A release MUST contain a "sublime_text" version selector. Use "*"
+    // for all versions.
+    {
+      "name": "Pexpect",
+      "details": "https://github.com/nate250/pexpect",
+      "releases": [
+        {
+          "sublime_text": "*",
+          "tags": true
+        }
+      ]
+    }
+  ]
+}
